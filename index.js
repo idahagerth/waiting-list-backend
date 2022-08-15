@@ -10,7 +10,7 @@ const PORT = process.env.PORT
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://admin.socket.io", "http://localhost:3000", "https://amritb.github.io/"],
+    origin: ["https://admin.socket.io", "http://localhost:3000", "https://amritb.github.io/","https://waiting-list-client-ida.herokuapp.com/"],
     credentials: true
   },
 });
