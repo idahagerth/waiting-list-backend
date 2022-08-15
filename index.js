@@ -4,6 +4,7 @@ const { instrument } = require("@socket.io/admin-ui");
 
 const server = http.createServer();
 const knex = require("./db");
+const PORT = process.env.PORT
 
 // Socket io admin
 
@@ -112,6 +113,6 @@ io.on("connection", async (socket) => {
   })
 });
 
-server.listen(8000, () => {
-  console.log("listening on port :8000");
+server.listen(PORT, () => {
+  console.log(`listening on ${PORT}`);
 });
